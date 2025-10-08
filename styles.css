@@ -772,3 +772,318 @@ button:focus {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
+
+/* ===================================
+   Article Page Styles
+   =================================== */
+.article-page {
+    background: var(--color-white);
+}
+
+.article-hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    padding: var(--spacing-2xl) 0;
+}
+
+.article-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-badge {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+}
+
+.article-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.article-hero .article-meta {
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.article-hero .article-meta .stars {
+    color: var(--color-gold);
+}
+
+.article-content {
+    padding: var(--spacing-2xl) 0;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-intro {
+    margin-bottom: var(--spacing-xl);
+}
+
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-lg);
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    color: var(--color-gray-900);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.article-content h4 {
+    font-size: 1.25rem;
+    color: var(--color-gray-800);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.article-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+    color: var(--color-gray-700);
+}
+
+.feature-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.feature-list li {
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: -1.5rem;
+    color: var(--color-success);
+    font-weight: 700;
+}
+
+.numbered-list {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-xl);
+}
+
+.numbered-list li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--color-gray-100);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin: var(--spacing-2xl) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    color: var(--color-gray-900);
+    margin: 0 0 var(--spacing-md) 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cta-content p {
+    font-size: 1.125rem;
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-final {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+}
+
+.cta-final h2 {
+    color: var(--color-white);
+}
+
+.cta-final p {
+    color: var(--color-white);
+}
+
+/* Pricing Section */
+.pricing-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.pricing-card {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-primary);
+}
+
+.pricing-card.featured-pricing {
+    border-color: var(--color-primary);
+    border-width: 3px;
+    box-shadow: var(--shadow-lg);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-md);
+    margin-top: 0;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: var(--spacing-md) 0;
+}
+
+.pricing-card .feature-list {
+    text-align: left;
+    margin-top: var(--spacing-lg);
+}
+
+/* Highlight Box */
+.highlight-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid var(--color-warning);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-xl) 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.highlight-box h3 {
+    color: #92400e;
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.highlight-box p {
+    color: #78350f;
+    margin-bottom: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.faq-item {
+    background: var(--color-gray-50);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+    border-left: 4px solid var(--color-primary);
+}
+
+.faq-item h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.faq-item p {
+    color: var(--color-gray-700);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* Article Responsive Design */
+@media (max-width: 768px) {
+    .article-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .lead {
+        font-size: 1.125rem;
+    }
+
+    .pricing-section {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .pricing-card .price {
+        font-size: 2rem;
+    }
+}
